@@ -6,20 +6,11 @@
 .White {color: #FEFFFF}
 
 html {
-    font-family: "rockwell", "arial";
+    font-family: 'Raleway', "rockwell", "arial";
 }
 
 body {
     margin:0;
-}
-
-h1 {
-    font-size: 45px;
-    color: #FEFFFF;
-}
-
-h2 {
-    font-size: 20px;
 }
 
 .hr1 {
@@ -33,25 +24,93 @@ h2 {
     border: none;
     height: 1px;
     width: 80%;
-    background-color: #DEF2F1;
+    background-color: white;
 }
 
-.header {
-    background-color: #2B7A78;
-    text-align: center;
-    width: 100%;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    margin-top: -10px;
-    margin-bottom: -30px;
-    
+
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    height: 10vh
 }
+/* Style the links */
+.topnav a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+.topnav a.name {
+    float: left;
+    font-size: 35px;
+    padding: 45px;
+    padding-left: 120px;
+}
+.topnav a.pages {
+    float: right;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-right: 120px;
+    padding-left: 0px;
+}
+/* Change the color of links on hover */
+.topnav a.pages:hover {
+    color: black;
+    transform-origin: bottom left;
+    transform: scale(1.1);
+}
+
+
+.missionHead {
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.missionBody {
+    background-color: white;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+
+.getInfo {
+    background-color: black;
+    height: 80vh;
+    color: white;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.take {
+    background-color: black;
+    height: 40vh;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+    padding-top: 2%;
+}
+
+.input1 {
+    width: 99%;
+    border-radius: 7px;
+    padding: 6px 10px;
+}
+
+
 
 .cal {
-    background-color: #DEF2F1;
+    background-color: rgb(244, 67, 54);
     overflow: hidden;
     padding-bottom: 20px;
-    color: #17252A;
+    color: white;
+    height: 70vh;
 }
 
 .S1cal {
@@ -70,16 +129,17 @@ h2 {
 .S3cal {
     float: right;
     width: 38%;
-    text-align: center;
+    text-align: left;
     padding-right: 12%;
 }
 
 .coff {
-    background-color: #17252A;
+    background-color: rgb(255, 152, 0);
     overflow: hidden;
     padding-top: 5px;
     padding-bottom: 5px;
-    color:#DEF2F1;
+    color:black;
+    height: 70vh;
 }
 
 .S1coff {

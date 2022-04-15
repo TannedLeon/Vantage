@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Perspective v1.3</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+        </style>
+
+
+        <title>Perspective v2.1</title>
         <link rel="stylesheet" href="style.css">
         <script src="backend.js"></script>
     </head>
 
     <body>
-        <div class="header">
-            <h1>PERSPECTIVE</h1>
+        <div class="topnav">
+            <a class="name" href="#home">VANTAGE</a>
+
+            <a class="pages" href="#about">ABOUT</a>
+            <a class="pages" href="#contact">CONTACT</a>
+            <a class="pages" href="#cal">NEWS</a>
+            <a class="pages" href="#home">HOME</a>
         </div>
-        
-        <div class="cal">
+
+        <div style="height: 30vh;"></div>
+
+        <div class="missionHead">
+            <h1>OUR MISSION</h1>
+        </div>
+
+        <div class="missionBody">
+            <p>We aim to influence young adults in a positive way by providing helpful perspective.</p>
+        </div>
+
+
+
+        <div style="height: 20vh; background-color: black"></div>
+        <div class="getInfo">
+            <h2>Provide us with some information so that we can guide you better.</h3>
+            <h4>Any personal information provided will not be saved or recorded.</h4>
+            <hr class="hr2">
+
+            <div class="take">
+                <p>Hourly wage at your current job</p>
+                <input id="HW" class="input1">
+                <p>Number of hour(s) you work each week</p>
+                <input id="NH" class="input1">
+                <p>Average yearly expenses</p>
+                <input id="AYE" class="input1">
+            </div>
+        </div>
+
+
+        <div style="height: 30vh; background-color: rgb(244, 67, 54)"></div>
+        <div id="cal" class="cal">
             <div class="S1cal">
                 <h2 class="black">An alternative way to interpret the cost of a product.</h2>
         
@@ -21,12 +61,9 @@
                 </blockquote>
             </div>
 
-            <hr class="hr1">
+            <hr class="hr2">
 
             <div class="S2cal">
-                <p>Hourly wage at your current job : $<input id="HW" size="10"></p>
-                <p>Number of hour(s) you work each week : <input id="NH" size="10"></p>
-                <p>Average yearly expenses : $<input id="AYE" size="10"></p>
                 <p>Cost of the item : $<input id="C" size="10"></p>
 
                 <button onclick="Cal()">Show Result</button>
@@ -42,10 +79,11 @@
 
 
 
+        <div style="height: 30vh; background-color: rgb(255, 152, 0)"></div>
         <div class="coff">
             <div class="S1coff">
                 <h2>Small changes makes a big difference.</h2>
-                <hr class="hr2">
+                <hr class="hr1">
                 <p>With the average cost of a cup of coffee around $5...</p>
             </div>
 
