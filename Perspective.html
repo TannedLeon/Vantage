@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Perspective v1.1</title>
+        <title>Perspective v1.2</title>
         <link rel="stylesheet" href="style.css">
         <script src="backend.js"></script>
     </head>
 
     <body>
-        <h1>Perspective</h1>
-        <hr>
-        <h2>
-            Here on this webpage exist a calculator that show you the true cost of an item.
-            <br>It should help you gain a new perspective on consumerism and the opportunity cost.
-        </h2>
+        <div class="header">
+            <h1>PERSPECTIVE</h1>
+        </div>
         
-        <blockquote>
-            "When you change the way you look at things, 
-            the things you look at change."
-        </blockquote>
-        <hr>
-        <p>Hourly wage at your current job : $<input id="HW" size="10"></p>
-        <p>Number of hour(s) you work each week : <input id="NH" size="10"></p>
-        <p>Average yearly expenses : $<input id="AYE" size="10"></p>
-        <p>Cost of the item : $<input id="C" size="10"></p>
+        <div class="cal">
+            <div class="S1cal">
+                <h2>
+                    An alternative way to interpret the cost of a product.
+                </h2>
+        
+                <blockquote>
+                    "When you change the way you look at things, 
+                    the things you look at change."
+                </blockquote>
+            </div>
 
-        <button onclick="Cal()">Show Result</button>
+            <hr class="hr1">
 
-        <p id="tt"></p>
-        <p id="p1"></p>
-        <p id="p2"></p>
-        <p id="p3"></p>
+            <div class="S2cal">
+                <p>Hourly wage at your current job : $<input id="HW" size="10"></p>
+                <p>Number of hour(s) you work each week : <input id="NH" size="10"></p>
+                <p>Average yearly expenses : $<input id="AYE" size="10"></p>
+                <p>Cost of the item : $<input id="C" size="10"></p>
+
+                <button onclick="Cal()">Show Result</button>
+            </div>
+
+            <div class="S3cal">
+            <p id="tt"></p>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            </div>
+        </div>
 
     </body>
 </html>

@@ -1,15 +1,77 @@
 
-html {
-    background-color: #222222;
-    font-family: "rockwell", "arial";
-    text-align: center;
-}
+.Black {color: #17252A} 
+.DarkCyan {color: #2B7A78}
+.BrightCyan {color: #3AAFA9}
+.Grey {color: #DEF2F1}
+.White {color: #FEFFFF}
 
-h2 {
-    font-size: 17px;
+html {
+    font-family: "rockwell", "arial";
 }
 
 body {
-    color: #ffffff;
+    margin:0;
+}
+
+h1 {
+    font-size: 45px;
+    color: #FEFFFF;
+}
+
+h2 {
+    font-size: 20px;
+    color: #17252A;
+}
+
+blockquote {
+    color: #17252A;
+}
+
+p {
+    color: #17252A;
+}
+
+.hr1 {
+    border: none;
+    height: 1px;
+    width: 80%;
+    background-color: #17252A;
+}
+
+.header {
+    background-color: #2B7A78;
+    text-align: center;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: -10px;
+    margin-bottom: -30px;
     
 }
+
+.cal {
+    background-color: #DEF2F1;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.S1cal {
+    padding-top: 1px;
+    text-align: center;
+}
+
+.S2cal {
+    float: left;
+    width: 38%;
+    text-align: left;
+    padding-left: 12%;
+
+}
+
+.S3cal {
+    float: right;
+    width: 38%;
+    text-align: center;
+    padding-right: 12%;
+}
+

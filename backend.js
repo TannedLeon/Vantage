@@ -6,24 +6,30 @@ function Cal() {
     var C = parseFloat(document.getElementById("C").value); // Cost 
 
     var hrs; // Number of hours one have to work for that item
+    var mins; // Total minutes
+
     var monthlyE; // Percentage of one's monthly earning for that item
     var Exp; // The expenses that the cost of the item could cover
 
+    // Calculations
     hrs = C/HW;
+    mins = hrs*60; // Convert total hours to total minutes
+    hrs = Math.trunc(hrs); // Remove decimal part from hours
+    mins = mins%60; // Find remainder for minutes
+    mins = Math.trunc(mins); // Remove decimal part from minutes
+
     monthlyE = (C/(NH*HW*4))*100;
     Exp = C/(AYE/365);
 
-    var tt = document.getElementById("tt");
-    var entertt = document.createTextNode("To afford this item...");
+    // Rounding numbers
+    monthlyE = Math.round((monthlyE + Number.EPSILON)*10)/10; // to 1 dp
+    Exp = Math.round((Exp + Number.EPSILON)*10)/10; // to 1 dp
 
-    var p1 = document.getElementById("p1");
-    var enterp1 = document.createTextNode("- You would have to work "+hrs+" hour(s) for it.");
-
-    var p2 = document.getElementById("p2");
-    var enterp2 = document.createTextNode("- You would have to give up "+monthlyE+"% of your monthly earnings for it.");
-
-    var p3 = document.getElementById("p3");
-    var enterp3 = document.createTextNode("- You would have to sacrifice "+Exp+" day(s) worth of expenses for it.");
+    // Output in HTML
+    document.getElementById("tt").innerHTML = "To afford this item..";
+    document.getElementById("p1").innerHTML = "- You would have to work "+hrs+" hour(s) & "+mins+" min(s) for it.";
+    document.getElementById("p2").innerHTML = "- You would have to give up "+monthlyE+"% of your monthly earnings for it.";
+    document.getElementById("p3").innerHTML = "- You would have to sacrifice "+Exp+" day(s) worth of expenses for it.";
 
     tt.append(entertt);
     p1.append(enterp1);
