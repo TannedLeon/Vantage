@@ -20,15 +20,6 @@ h1 {
 
 h2 {
     font-size: 20px;
-    color: #17252A;
-}
-
-blockquote {
-    color: #17252A;
-}
-
-p {
-    color: #17252A;
 }
 
 .hr1 {
@@ -36,6 +27,13 @@ p {
     height: 1px;
     width: 80%;
     background-color: #17252A;
+}
+
+.hr2 {
+    border: none;
+    height: 1px;
+    width: 80%;
+    background-color: #DEF2F1;
 }
 
 .header {
@@ -53,6 +51,7 @@ p {
     background-color: #DEF2F1;
     overflow: hidden;
     padding-bottom: 20px;
+    color: #17252A;
 }
 
 .S1cal {
@@ -75,3 +74,25 @@ p {
     padding-right: 12%;
 }
 
+.coff {
+    background-color: #17252A;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:#DEF2F1;
+}
+
+.S1coff {
+    text-align: center;
+}
+
+.S2coff {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.butcoff {
+    float: left;
+    width: 33%;
+    text-align: center;
+}

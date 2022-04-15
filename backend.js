@@ -31,8 +31,19 @@ function Cal() {
     document.getElementById("p2").innerHTML = "- You would have to give up "+monthlyE+"% of your monthly earnings for it.";
     document.getElementById("p3").innerHTML = "- You would have to sacrifice "+Exp+" day(s) worth of expenses for it.";
 
-    tt.append(entertt);
-    p1.append(enterp1);
-    p2.append(enterp2);
-    p3.append(enterp3);
+}
+
+function coff7() {
+    // Output in HTML
+    document.getElementById("coffout").innerHTML = "...will increase your yearly expense by roughly $1825.";
+}
+
+function coff3() {
+    // Output in HTML
+    document.getElementById("coffout").innerHTML = "...will increase your yearly expense by roughly $782.";
+}
+
+function coff1() {
+    // Output in HTML
+    document.getElementById("coffout").innerHTML = "...will increase your yearly expense by roughly $261.";
 }

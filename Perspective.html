@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Perspective v1.2</title>
+        <title>Perspective v1.3</title>
         <link rel="stylesheet" href="style.css">
         <script src="backend.js"></script>
     </head>
@@ -13,11 +13,9 @@
         
         <div class="cal">
             <div class="S1cal">
-                <h2>
-                    An alternative way to interpret the cost of a product.
-                </h2>
+                <h2 class="black">An alternative way to interpret the cost of a product.</h2>
         
-                <blockquote>
+                <blockquote class="black">
                     "When you change the way you look at things, 
                     the things you look at change."
                 </blockquote>
@@ -39,6 +37,27 @@
             <p id="p1"></p>
             <p id="p2"></p>
             <p id="p3"></p>
+            </div>
+        </div>
+
+
+
+        <div class="coff">
+            <div class="S1coff">
+                <h2>Small changes makes a big difference.</h2>
+                <hr class="hr2">
+                <p>With the average cost of a cup of coffee around $5...</p>
+            </div>
+
+            <div>
+                <button class="butcoff" onclick="coff7()">1 cup per day</button>
+                <button class="butcoff" onclick="coff3()">3 cups per week</button>
+                <button class="butcoff" onclick="coff1()">1 cup per week</button>
+            </div>
+
+            <div class="S2coff">
+                <p id="coffout">...will increase your yearly expense by roughly $0.</p>
+                <p>Reversely, you could reduce your yearly expense by the same amount if you make your coffee yourself!</p>
             </div>
         </div>
 
