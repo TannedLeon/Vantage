@@ -84,3 +84,20 @@ function Cal2() {
     document.getElementById("dayOut").innerHTML = "$"+day+" every day";
 
 }
+
+function MCQ1() {
+    if (document.getElementById("time").checked == false && document.getElementById("money").checked == false) {
+        document.getElementById("MCQ1").innerHTML = "Neither?"; 
+    } else if (document.getElementById("time").checked == false && document.getElementById("money").checked == true) {
+        document.getElementById("MCQ1").innerHTML = "Alright, understandable."; 
+    } else if (document.getElementById("time").checked == true && document.getElementById("money").checked == false) {
+        document.getElementById("MCQ1").innerHTML = "Okay, wise."; 
+    } else if (document.getElementById("time").checked == true && document.getElementById("money").checked == true) {
+        document.getElementById("MCQ1").innerHTML = "That's right! Being able to have both is surely ideal."; 
+    }
+}
+function Reveal() {
+    var x = document.getElementById("reveal");
+    x.style.display = "inline";
+}
+

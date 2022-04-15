@@ -195,3 +195,16 @@ body {
     font-size: 20px;
 }
 
+.timeImp {
+    background-color: rgb(76, 175, 80);
+    overflow: hidden;
+    color: black;
+    height: 80vh;
+    text-align: center;
+}
+.S1timeImp {
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+

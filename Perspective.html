@@ -6,7 +6,7 @@
         </style>
 
 
-        <title>Perspective v2.2</title>
+        <title>Perspective v2.3</title>
         <link rel="stylesheet" href="style.css">
         <script src="backend.js"></script>
     </head>
@@ -111,8 +111,8 @@
         <div class="retire">
             <div class="S1retire">
                 <h2>How rich you are depends not on how much you earn, but how much you spent.</h2>
-                <hr class="hr1">
                 <p>Make a million a year but spend 1.1 million, you're poor. Make 50 grand a year but spend only 30 grand, you're rich.</p>
+                <hr class="hr1">
             </div>
 
             <div class="S2retire">
@@ -127,6 +127,46 @@
                 <p>until you retire.</p>
             </div>
             
+        </div>
+
+
+        <div style="height: 20vh; background-color: rgb(76, 175, 80)"></div>
+        <div class="timeImp">
+            <h2>Spend your time the way you spend your money.</h2>
+            <h4>Time is arguebly more valueble than money for it is finite.</h4>
+            <hr class="hr1">
+
+            <div class="S1timeImp">
+                <p><b>If we could offer you time or money, which would you pick?</b></p>
+                <div>
+                    <input type="checkbox" id="time" name="time" onclick="MCQ1()">
+                    <label for="time">Time</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="money" name="money" onclick="MCQ1()">
+                    <label for="money">Money</label>
+                </div>
+                <p><b id="MCQ1">Make your pick.</b></p>
+
+                <p>
+                    Time and money are similar a some ways. 
+                    For example, they are both commonity that people spend, they both offer value, and they both can be lost.
+                    The importance of knowing the differences between time and money, is arguebly more important than knowing their similarities.
+                </p>
+
+                <p><b>What is one thing that Elon Musk, Rihanna, Shakespeare, and you have in common?</b></p>
+                <a style="text-decoration: underline;" onclick="Reveal()"><b>Reveal the answer</b></a> 
+                <label id="reveal" style="display:none;">: You all have the same 24 hours in a day!</label>
+
+                <p>
+                    The key difference between time and money would be that money is replenishable and time is not. 
+                    Time is the one commonity that no amount of money can buy.
+                    Once your time is wasted you can never reclaim it, but once your money is wasted you could always replenish it.
+
+                </p>
+                
+
+            </div>
         </div>
     </body>
 </html>
