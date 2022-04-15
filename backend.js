@@ -1,5 +1,11 @@
+function Check() {
 
-function Cal() {
+
+    document.getElementById('cal').scrollIntoView();
+}
+
+// Function to calculate the true cost of a product
+function Cal1() {
     var HW = parseFloat(document.getElementById("HW").value); // Hourly wage
     var NH = parseFloat(document.getElementById("NH").value); // Number of hours work each week
     var AYE = parseFloat(document.getElementById("AYE").value); // Average yearly expense
@@ -35,15 +41,46 @@ function Cal() {
 
 function coff7() {
     // Output in HTML
-    document.getElementById("coffout").innerHTML = "...will increase your yearly expense by roughly $1825.";
+    document.getElementById("coffOut").innerHTML = "...will increase your yearly expense by roughly $1825.";
 }
-
 function coff3() {
     // Output in HTML
-    document.getElementById("coffout").innerHTML = "...will increase your yearly expense by roughly $782.";
+    document.getElementById("coffOut").innerHTML = "...will increase your yearly expense by roughly $782.";
 }
-
 function coff1() {
     // Output in HTML
-    document.getElementById("coffout").innerHTML = "...will increase your yearly expense by roughly $261.";
+    document.getElementById("coffOut").innerHTML = "...will increase your yearly expense by roughly $261.";
+}
+
+
+// Function to calculate retirement age
+function Cal2() {
+    var RA = parseFloat(document.getElementById("RA").value); // Retirement age
+    var CS = parseFloat(document.getElementById("CS").value); // Current savings
+    var AGE = parseFloat(document.getElementById("AGE").value); // Age
+    var AYE = parseFloat(document.getElementById("AYE").value); // Average yearly expense
+
+    var year; // Yearly contribution to reach goal
+    var month; // Monthly contribution to reach goal
+    var week; // Weekly contribution to reach goal
+    var day; // Daily contribution to reach goal
+
+    // Calculation
+    year = (((90-RA)*AYE)-CS) / (RA-AGE);
+    month = year/12;
+    week = year/52;
+    day = year/365;
+
+    // Rounding numbers
+    year = Math.round((year + Number.EPSILON)*100)/100; // to 2 dp
+    month = Math.round((month + Number.EPSILON)*100)/100; // to 2 dp
+    week = Math.round((week + Number.EPSILON)*100)/100; // to 2 dp
+    day = Math.round((day + Number.EPSILON)*100)/100; // to 2 dp
+
+    // Output to HTML
+    document.getElementById("yearOut").innerHTML = "$"+year+" every year";
+    document.getElementById("monthOut").innerHTML = "$"+month+" every month";
+    document.getElementById("weekOut").innerHTML = "$"+week+" every week";
+    document.getElementById("dayOut").innerHTML = "$"+day+" every day";
+
 }

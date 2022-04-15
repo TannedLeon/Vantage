@@ -6,7 +6,7 @@
         </style>
 
 
-        <title>Perspective v2.1</title>
+        <title>Perspective v2.2</title>
         <link rel="stylesheet" href="style.css">
         <script src="backend.js"></script>
     </head>
@@ -46,12 +46,19 @@
                 <input id="NH" class="input1">
                 <p>Average yearly expenses</p>
                 <input id="AYE" class="input1">
+                <p>Age</p>
+                <input id="AGE" class="input1">
+
+                <div class="take2">
+                    <button class="button1" onclick="Check()"><span>Complete</span></button>
+                </div>
+                
             </div>
         </div>
 
 
-        <div style="height: 30vh; background-color: rgb(244, 67, 54)"></div>
-        <div id="cal" class="cal">
+        <div id="cal" style="height: 30vh; background-color: rgb(244, 67, 54)"></div>
+        <div class="cal">
             <div class="S1cal">
                 <h2 class="black">An alternative way to interpret the cost of a product.</h2>
         
@@ -66,7 +73,7 @@
             <div class="S2cal">
                 <p>Cost of the item : $<input id="C" size="10"></p>
 
-                <button onclick="Cal()">Show Result</button>
+                <button onclick="Cal1()">Show Result</button>
             </div>
 
             <div class="S3cal">
@@ -94,10 +101,32 @@
             </div>
 
             <div class="S2coff">
-                <p id="coffout">...will increase your yearly expense by roughly $0.</p>
+                <p id="coffOut">...will increase your yearly expense by roughly $0.</p>
                 <p>Reversely, you could reduce your yearly expense by the same amount if you make your coffee yourself!</p>
             </div>
         </div>
 
+
+        <div style="height: 15vh; background-color: rgb(255, 235, 59)"></div>
+        <div class="retire">
+            <div class="S1retire">
+                <h2>How rich you are depends not on how much you earn, but how much you spent.</h2>
+                <hr class="hr1">
+                <p>Make a million a year but spend 1.1 million, you're poor. Make 50 grand a year but spend only 30 grand, you're rich.</p>
+            </div>
+
+            <div class="S2retire">
+                <p>Retirement age : <input id="RA" size="15"></p>
+                <p>Current savings : $<input id="CS" size="15"></p>
+                <button onclick="Cal2()">Show Result</button>
+                <p>To retire at the age of 0, You would need to save</p>
+                <p id="yearOut">$0 every year</p>
+                <p id="monthOut">$0 every month</p>
+                <p id="weekOut">$0 every week</p>
+                <p id="dayOut">$0 every day</p>
+                <p>until you retire.</p>
+            </div>
+            
+        </div>
     </body>
 </html>

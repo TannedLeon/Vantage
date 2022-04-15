@@ -1,30 +1,57 @@
 
-.Black {color: #17252A} 
-.DarkCyan {color: #2B7A78}
-.BrightCyan {color: #3AAFA9}
-.Grey {color: #DEF2F1}
-.White {color: #FEFFFF}
 
 html {
     font-family: 'Raleway', "rockwell", "arial";
+    scroll-behavior: smooth;
 }
-
 body {
     margin:0;
 }
-
 .hr1 {
     border: none;
     height: 1px;
     width: 80%;
     background-color: #17252A;
 }
-
 .hr2 {
     border: none;
     height: 1px;
     width: 80%;
     background-color: white;
+}
+.button1 {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 18px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+}
+.button1:hover span {
+    padding-right: 15px;
+}
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 
@@ -69,7 +96,6 @@ body {
     text-align: center;
     font-size: 30px;
 }
-
 .missionBody {
     background-color: white;
     height: 50vh;
@@ -87,20 +113,22 @@ body {
     padding-top: 1px;
     text-align: center;
 }
-
 .take {
     background-color: black;
     height: 40vh;
-    width: 40%;
+    width: 30%;
     margin: auto;
     text-align: left;
-    padding-top: 2%;
+    padding-top: 1%;
 }
-
 .input1 {
-    width: 99%;
+    width: 94%;
     border-radius: 7px;
     padding: 6px 10px;
+}
+.take2 {
+    text-align: center;
+    padding-top: 5%;
 }
 
 
@@ -112,12 +140,10 @@ body {
     color: white;
     height: 70vh;
 }
-
 .S1cal {
     padding-top: 1px;
     text-align: center;
 }
-
 .S2cal {
     float: left;
     width: 38%;
@@ -125,7 +151,6 @@ body {
     padding-left: 12%;
 
 }
-
 .S3cal {
     float: right;
     width: 38%;
@@ -141,18 +166,32 @@ body {
     color:black;
     height: 70vh;
 }
-
 .S1coff {
     text-align: center;
 }
-
 .S2coff {
     text-align: center;
     padding-top: 25px;
 }
-
 .butcoff {
     float: left;
     width: 33%;
     text-align: center;
 }
+
+
+.retire {
+    background-color: rgb(255, 235, 59);
+    overflow: hidden;
+    color: black;
+    height:85vh;
+}
+.S1retire {
+    text-align: center;
+}
+.S2retire {
+    text-align: center;
+    padding-top: 3vh;
+    font-size: 20px;
+}
+
