@@ -53,6 +53,38 @@ body {
     opacity: 1;
     right: 0;
 }
+.button2 {
+    display: inline-block;
+    border-radius: 0px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.button2:hover {
+    opacity: 60%;
+}
+.backTop {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    cursor: n-resize;
+    border-radius: 100%;
+    border: none;
+    padding: 0.5rem;
+    background-color: white;
+}
+.backTop:hover{
+    opacity: 60%;
+}
+.backTopIcon {
+    width: 1rem;
+    height: 1rem;
+    color: black;
+}
 
 
 
@@ -70,38 +102,61 @@ body {
 .topnav a.name {
     float: left;
     font-size: 35px;
-    padding: 45px;
+    padding: 25px;
     padding-left: 120px;
 }
 .topnav a.pages {
     float: right;
     font-size: 20px;
-    padding-top: 60px;
+    padding-top: 35px;
     padding-bottom: 30px;
     padding-right: 120px;
     padding-left: 0px;
 }
 /* Change the color of links on hover */
 .topnav a.pages:hover {
-    color: black;
     transform-origin: bottom left;
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+#redH:hover {
+    color:rgb(244, 67, 54);
+}
+#orangeH:hover {
+    color:rgb(255, 152, 0);
+}
+#yellowH:hover {
+    color:rgb(255, 235, 59);
+}
+#greenH:hover {
+    color: rgb(76, 175, 80);
 }
 
-
-.missionHead {
+.mission {
     background-color: white;
+    text-align: center;
+    margin: auto;
+    height: 90vh;
+}
+.missionFloat {
+    width: 95%;
+    text-align: center;
+    margin:auto;
+    background-color: rgb(238, 238, 238);
+    height: 95%;
+}
+.missionHead {
     height: 10vh;
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 .missionBody {
-    background-color: white;
-    height: 50vh;
     width: 100%;
     text-align: center;
     font-size: 22px;
+}
+.missionButton {
+    padding-top: 20px;
 }
 
 

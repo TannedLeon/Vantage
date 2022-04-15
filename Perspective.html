@@ -6,34 +6,48 @@
         </style>
 
 
-        <title>Perspective v2.3</title>
+        <title>Perspective v3.1</title>
         <link rel="stylesheet" href="style.css">
         <script src="backend.js"></script>
     </head>
 
     <body>
+        <button class="backTop" id="backTop" onclick="Top()" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="backTopIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+        </button>
+
+
         <div class="topnav">
             <a class="name" href="#home">VANTAGE</a>
 
-            <a class="pages" href="#about">ABOUT</a>
-            <a class="pages" href="#contact">CONTACT</a>
-            <a class="pages" href="#cal">NEWS</a>
-            <a class="pages" href="#home">HOME</a>
+            <a class="pages" id="greenH" href="#green" title="Time Importance">GREEN</a>
+            <a class="pages" id="yellowH" href="#yellow" title="Retirement Calculator">YELLOW</a>
+            <a class="pages" id="orangeH" href="#orange" title="Atomic Habbits">ORANGE</a>
+            <a class="pages" id="redH" href="#red" title="True Cost Calculator">RED</a>
         </div>
 
-        <div style="height: 30vh;"></div>
+        
+        <div class="mission">
+            <div class="missionFloat">
+                <div style="height: 23vh;"></div>
+                <div class="missionHead">
+                    <h1>OUR MISSION</h1>
+                </div>
+        
+                <div class="missionBody">
+                    <p>We aim to influence young adults in a positive way by providing helpful perspective.</p>
+                </div>
 
-        <div class="missionHead">
-            <h1>OUR MISSION</h1>
+                <div class="missionButton">
+                    <button class="button2" onclick="getStarted()"><span>GET STARTED</span></button>
+                </div>
+            </div>
         </div>
 
-        <div class="missionBody">
-            <p>We aim to influence young adults in a positive way by providing helpful perspective.</p>
-        </div>
 
-
-
-        <div style="height: 20vh; background-color: black"></div>
+        <div id="black" style="height: 20vh; background-color: black"></div>
         <div class="getInfo">
             <h2>Provide us with some information so that we can guide you better.</h3>
             <h4>Any personal information provided will not be saved or recorded.</h4>
@@ -57,7 +71,7 @@
         </div>
 
 
-        <div id="cal" style="height: 30vh; background-color: rgb(244, 67, 54)"></div>
+        <div id="red" style="height: 30vh; background-color: rgb(244, 67, 54)"></div>
         <div class="cal">
             <div class="S1cal">
                 <h2 class="black">An alternative way to interpret the cost of a product.</h2>
@@ -86,7 +100,7 @@
 
 
 
-        <div style="height: 30vh; background-color: rgb(255, 152, 0)"></div>
+        <div id="orange" style="height: 30vh; background-color: rgb(255, 152, 0)"></div>
         <div class="coff">
             <div class="S1coff">
                 <h2>Small changes makes a big difference.</h2>
@@ -107,7 +121,7 @@
         </div>
 
 
-        <div style="height: 15vh; background-color: rgb(255, 235, 59)"></div>
+        <div id="yellow" style="height: 15vh; background-color: rgb(255, 235, 59)"></div>
         <div class="retire">
             <div class="S1retire">
                 <h2>How rich you are depends not on how much you earn, but how much you spent.</h2>
@@ -130,7 +144,7 @@
         </div>
 
 
-        <div style="height: 20vh; background-color: rgb(76, 175, 80)"></div>
+        <div id="green" style="height: 20vh; background-color: rgb(76, 175, 80)"></div>
         <div class="timeImp">
             <h2>Spend your time the way you spend your money.</h2>
             <h4>Time is arguebly more valueble than money for it is finite.</h4>

@@ -1,7 +1,28 @@
+
+// Get button
+var backTopButton = document.getElementById("backTop");
+// When the user scrolls down 150px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        backTop.style.display = "block";
+    } else {
+        backTop.style.display = "none";
+    }
+}
+// Scroll back up function
+function Top() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function getStarted() {
+    document.getElementById('black').scrollIntoView();
+}
+
 function Check() {
-
-
-    document.getElementById('cal').scrollIntoView();
+    document.getElementById('red').scrollIntoView();
 }
 
 // Function to calculate the true cost of a product
