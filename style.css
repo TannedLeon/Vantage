@@ -110,7 +110,7 @@ body {
     font-size: 20px;
     padding-top: 35px;
     padding-bottom: 30px;
-    padding-right: 120px;
+    padding-right: 110px;
     padding-left: 0px;
 }
 /* Change the color of links on hover */
@@ -129,6 +129,9 @@ body {
 }
 #greenH:hover {
     color: rgb(76, 175, 80);
+}
+#blueH:hover {
+    color:rgb(33, 150, 243);
 }
 
 .mission {
@@ -260,6 +263,20 @@ body {
 .S1timeImp {
     text-align: left;
     width: 60%;
+    margin: auto;
+}
+
+
+.spot {
+    background-color: rgb(33, 150, 243);
+    overflow: hidden;
+    color: black;
+    height: 92vh;
+    text-align: center;
+}
+.S1spot {
+    text-align: center;
+    width: 70%;
     margin: auto;
 }
 

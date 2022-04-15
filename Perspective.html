@@ -6,7 +6,7 @@
         </style>
 
 
-        <title>Perspective v3.1</title>
+        <title>Perspective v3.2</title>
         <link rel="stylesheet" href="style.css">
         <script src="backend.js"></script>
     </head>
@@ -22,6 +22,7 @@
         <div class="topnav">
             <a class="name" href="#home">VANTAGE</a>
 
+            <a class="pages" id="blueH" href="#blue" title="Lifetime In Spots">BLUE</a>
             <a class="pages" id="greenH" href="#green" title="Time Importance">GREEN</a>
             <a class="pages" id="yellowH" href="#yellow" title="Retirement Calculator">YELLOW</a>
             <a class="pages" id="orangeH" href="#orange" title="Atomic Habbits">ORANGE</a>
@@ -103,7 +104,7 @@
         <div id="orange" style="height: 30vh; background-color: rgb(255, 152, 0)"></div>
         <div class="coff">
             <div class="S1coff">
-                <h2>Small changes makes a big difference.</h2>
+                <h2>Small changes make a big difference.</h2>
                 <hr class="hr1">
                 <p>With the average cost of a cup of coffee around $5...</p>
             </div>
@@ -133,7 +134,8 @@
                 <p>Retirement age : <input id="RA" size="15"></p>
                 <p>Current savings : $<input id="CS" size="15"></p>
                 <button onclick="Cal2()">Show Result</button>
-                <p>To retire at the age of 0, You would need to save</p>
+                <p id="ageOut">To retire at the age of 0, You would need to save</p>
+                <p id="moneyOut">$0 in total</p>
                 <p id="yearOut">$0 every year</p>
                 <p id="monthOut">$0 every month</p>
                 <p id="weekOut">$0 every week</p>
@@ -179,8 +181,39 @@
 
                 </p>
                 
-
             </div>
         </div>
+
+        <div id="blue" style="height: 8vh; background-color: rgb(33, 150, 243)"></div>
+        <div class="spot">
+            <h2>Your life in months.</h2>
+            <h4>Below shows a lifespan of 90 years. Each spot represent a month and the solid spots represent that months that you have spent.</h4>
+            <hr class="hr1">
+
+            <div class="S1spot">
+                <h2>
+                    ●●●●●●●●●●●● ●●●●●●●●●●●● ●●●●●●●●●●●● ●●●●●●●●●●●● ●●●●●●●●●●●●
+                    ●●●●●●●●●●●● ●●●●●●●●●●●● ●●●●●●●●●●●● ●●●●●●●●●●●● ●●●●●●●●●●●●
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                    ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○ ○○○○○○○○○○○○
+                </h2>
+                <p>*The black spots adds up to 20 years.</p>
+            </div>
+        </div>
+
     </body>
 </html>

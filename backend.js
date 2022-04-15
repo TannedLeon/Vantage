@@ -81,12 +81,14 @@ function Cal2() {
     var AGE = parseFloat(document.getElementById("AGE").value); // Age
     var AYE = parseFloat(document.getElementById("AYE").value); // Average yearly expense
 
+    var money; // Total amount of money needed
     var year; // Yearly contribution to reach goal
     var month; // Monthly contribution to reach goal
     var week; // Weekly contribution to reach goal
     var day; // Daily contribution to reach goal
 
     // Calculation
+    money = ((90-RA)*AYE);
     year = (((90-RA)*AYE)-CS) / (RA-AGE);
     month = year/12;
     week = year/52;
@@ -99,6 +101,8 @@ function Cal2() {
     day = Math.round((day + Number.EPSILON)*100)/100; // to 2 dp
 
     // Output to HTML
+    document.getElementById("ageOut").innerHTML = "To retire at the age of "+RA+", You would need to save";
+    document.getElementById("moneyOut").innerHTML = "$"+money+" in total";
     document.getElementById("yearOut").innerHTML = "$"+year+" every year";
     document.getElementById("monthOut").innerHTML = "$"+month+" every month";
     document.getElementById("weekOut").innerHTML = "$"+week+" every week";
